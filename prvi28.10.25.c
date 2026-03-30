@@ -1,19 +1,20 @@
 /*
-Na programskom jeziku C napisati strukturni program koji proverava da li za uneti pozitivan
+ Na programskom jeziku C napisati strukturni program koji proverava da li za uneti pozitivan
 broj a važi da je zbir kubova cifara broja a jednak broju a. Ako su jednaki ispisati „da“, ako nisu ispisati
 „ne“.
 */
 #include<stdio.h>
-int main()
-{
+int main2 ()
+{ 
 	int a, sum = 0, temp, cifra;
-	scanf("%d", &a);
-		temp = a;
+	scanf_s("%d", &a);
+	temp = a;
 	while (temp > 0)
 	{
 		cifra = temp % 10;
+		
 		sum += cifra * cifra * cifra;
-		temp = temp / 10;
+		
 	}
 	if (sum == a)
 		printf("da");
